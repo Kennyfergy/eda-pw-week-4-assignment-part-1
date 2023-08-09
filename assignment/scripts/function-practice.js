@@ -7,7 +7,7 @@ console.log("***** Function Practice *****");
 // 1. Function to return 'Hello World!'
 function hello() {
   return "Hello World!";
-}
+} //end hello function
 // Call the function to test
 console.log('Test - should say "Hello World!"', hello());
 
@@ -15,7 +15,7 @@ console.log('Test - should say "Hello World!"', hello());
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
 function helloName() {
   return "Hello, Your Name!";
-}
+} //end helloName function
 // Remember to call the function to test
 console.log("Test for: 'Hello, You Name!'", helloName());
 
@@ -23,13 +23,13 @@ console.log("Test for: 'Hello, You Name!'", helloName());
 
 function addNumbers(num1, num2) {
   return num1 + num2;
-}
+} //end addNumbers function
 addNumbers(37, 302);
 console.log(addNumbers(37, 302));
 // 4. Function to multiply three numbers & return the result
 function multiplyThree(num1, num2, num3) {
   return num1 * num2 * num3;
-}
+} //end multiplyThree function
 multiplyThree(3, 4, 6);
 console.log(multiplyThree(3, 4, 6));
 
@@ -39,7 +39,8 @@ function isPositive(number) {
   if (number > 0) {
     return true;
   } else return false;
-}
+} //end isPositive function
+
 // Call the function to test each outcome (true & false)
 isPositive(3);
 console.log(isPositive(3));
@@ -56,7 +57,7 @@ console.log("isPositive - should say false", isPositive(-3));
 //    array is empty, return `undefined`.
 function getLast(array) {
   return array[array.length - 1];
-}
+} //end function
 console.log(getLast[1]);
 // 7. Function to find a value in an array. Return true if the
 //    value is found and false otherwise. Use a loop;
@@ -104,7 +105,14 @@ function sumAll(array) {
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
-function allPositive() {}
+function allPositive(input) {
+  const positiveNumbers = input.filter((number) => number > 0);
+  return positiveNumbers;
+} //end function: allPositive
+let input = [-1, 1, -2, 2, -3, 3];
+let positiveArray = allPositive(input);
+console.log(positiveArray);
+
 // 11. Pick a problem from Edabit(https://edabit.com/) or
 //     CodeWars(https://www.codewars.com/). Then describe it
 //     here in a comment, write the function, and test it!
