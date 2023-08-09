@@ -117,6 +117,19 @@ console.log(positiveArray);
 //     CodeWars(https://www.codewars.com/). Then describe it
 //     here in a comment, write the function, and test it!
 
+//From Edabit:
+//Write a function that converts hours into seconds.
+// Need to write a function where you can input and hour amount and convert it to seconds
+function howManySeconds(hours) {
+  const secondsInHour = 3600; // There are 3600 seconds in an hour
+  const seconds = hours * secondsInHour;
+  return seconds;
+}
+
+let hours = 2;
+let seconds = howManySeconds(2);
+console.log("How many seconds in 2 hours:", howManySeconds(2));
+
 // DO NOT MODIFY
 // Used for automated testing
 try {
