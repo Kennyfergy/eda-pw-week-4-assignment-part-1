@@ -59,7 +59,14 @@ console.log("isPositive - should say false", isPositive(-3));
 function getLast(array) {
   return array[array.length - 1];
 } //end function
-console.log(getLast[1]);
+console.log("Testing getLast", getLast(1));
+
+/*#6: Try calling this again. You have getLast[1], 
+but JavaScript doesn't quite know what to do with that. 
+Calling functions always needs a pair of parenthesis (()), wrap [1] in 
+parenthesis.
+*/
+
 // 7. Function to find a value in an array. Return true if the
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find
